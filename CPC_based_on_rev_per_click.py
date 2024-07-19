@@ -3,8 +3,6 @@ import numpy as np
 
 
 def CPC_based_on_rev_per_click():
-    st.html('<h5>If you work with manual CPC (or max CPC)</h5>')
-
     with st.container(border=True):
         st.html('<h6>Based on revenue per click data</h6>')
         col_equation, col_non_equation = st.columns([1, 10])

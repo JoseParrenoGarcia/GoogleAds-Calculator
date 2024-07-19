@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 from CPC_based_on_rev_per_click import CPC_based_on_rev_per_click
+from CPC_based_on_conversion_value_and_conversion_rate import CPC_based_on_conv_valu_and_conv_rate
 
 # ---------------------------------------------------------------------
 # HOME PAGE - CONFIGURATION
@@ -13,10 +14,10 @@ st.set_page_config(
 # MAIN PANEL
 # ---------------------------------------------------------------------
 with st.container(border=True):
+    st.html('<h5>If you work with manual CPC (or max CPC)</h5>')
     CPC_based_on_rev_per_click()
 
-    with st.container(border=True):
-        st.write('hello')
+    CPC_based_on_conv_valu_and_conv_rate()
 
 
 
@@ -47,7 +48,7 @@ with st.container(border=True):
 
     with col2:
         with st.container(border=True, height=100):
-            tROAS_cpa = st.number_input('Target ROAS (if you type 400, this means 400%) ',
+            tROAS_cpa = st.number_input('Target ROAS (if you type 400, this means 400%)  ',
                                         min_value=0,
                                         step=1,
                                         value=400,
