@@ -11,9 +11,6 @@ def CPC_based_on_conv_valu_and_conv_rate():
                         \begin{equation*}
                         \begin{aligned}
                         \text{CPC} = \left(\frac{\text{conversion value}}{\text{target ROAS}}\right) * \text{conversion rate}
-                                   = \left(\frac{ {\text{revenue}}} {\frac{\text{revenue}}{\text{cost}}}\right) * \frac{\text{conversions}}{\text{clicks}}
-                                   = \left(\frac{\text{revenue * cost}}{\text{revenue}}\right) * \frac{\text{conversions}}{\text{clicks}}
-                                   = \text{cost} * \frac{\text{conversions}}{\text{clicks}}
                         \end{aligned}
                         \end{equation*}
                         ''')
